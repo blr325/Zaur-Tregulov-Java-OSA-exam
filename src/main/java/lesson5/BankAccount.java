@@ -9,10 +9,14 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public double popolnenieScheta (double sum){
-        return balance += sum;
+    public void popolnenieScheta (double summa){
+        System.out.println("Баланс до увеличения = " + balance);
+        balance += summa;
+        System.out.println("Баланс увеличили на " + summa + " теперь он равен " + balance);
     }
-    public double snyatieSoScheta (double sum){
-        return balance += sum;
+    public void snyatieSoScheta (double summa){
+        System.out.println("Баланс до снятия = " + balance);
+        balance -= summa;
+        System.out.println("Баланс уменьшили на " + summa + " теперь он равен " + balance);
     }
 }
