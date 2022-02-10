@@ -21,6 +21,16 @@ public class Student {
         this.averageScoreForeignLanguage = averageScoreForeignLanguage;
     }
 
+    public Student(int studentIdNumber, String name, String surName, int yearStudy) {
+        this.studentIdNumber = studentIdNumber;
+        this.name = name;
+        this.surName = surName;
+        this.yearStudy = yearStudy;
+    }
+
+    public Student() {
+    }
+
     public double countAverageScore() {
         return (averageScoreMath + averageScoreEcon + averageScoreForeignLanguage) / 3;
     }
@@ -31,5 +41,19 @@ public class Student {
 
     public String getSurName() {
         return surName;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentIdNumber=" + studentIdNumber +
+                ", name='" + name + '\'' +
+                ", surName='" + surName + '\'' +
+                ", yearStudy=" + yearStudy +
+                ", averageScoreMath=" + averageScoreMath +
+                ", averageScoreEcon=" + averageScoreEcon +
+                ", averageScoreForeignLanguage=" + averageScoreForeignLanguage +
+                ", averageScore=" + averageScore +
+                '}';
     }
 }

@@ -4,6 +4,17 @@ public class StudentTest {
     public static void main(String[] args) {
         getStudents();
         printAverageScoreStudents();
+        lesson6();
+    }
+
+    private static void lesson6() {
+        Student student1 = new Student(111, "Dmitry", "Alekseev",
+                4, 8.6, 6.5, 8.5);
+        Student student2 = new Student(12345, "Andrei", "Ivanon",5);
+        Student student3 = new Student();
+        System.out.println(student1.toString());
+        System.out.println(student2.toString());
+        System.out.println(student3.toString());
     }
 
     private static void printAverageScoreStudents() {
