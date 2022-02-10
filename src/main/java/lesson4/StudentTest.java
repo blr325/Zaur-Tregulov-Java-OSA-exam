@@ -7,9 +7,9 @@ public class StudentTest {
     }
 
     private static void printAverageScoreStudents() {
-        for (int i = 0; i < getStudents().length; i++) {
+        for (Student student : getStudents()) {
             System.out.printf("Cредний балл студента %s %s - %.2f\n",
-                    getStudents()[i].getName(), getStudents()[i].getSurName(), getStudents()[i].countAverageScore());
+                    student.getName(), student.getSurName(), student.countAverageScore());
         }
     }
 
