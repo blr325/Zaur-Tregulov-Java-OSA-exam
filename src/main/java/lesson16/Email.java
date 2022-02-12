@@ -14,7 +14,6 @@ public class Email {
     }
 }
 
-
 class EmailTest {
     public static void main(String[] args) {
         checkEmail("ya@yahoo.com; on@mail.ru; ona@gmail.com;");
