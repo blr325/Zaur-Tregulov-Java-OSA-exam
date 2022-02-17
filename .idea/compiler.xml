@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Zaur Tregulov Java OSA exam" />
+        <module name="Zaur_Tregulov_Java_OSA_exam" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Zaur Tregulov Java OSA exam" options="--add-modules java.base" />
+      <module name="Zaur_Tregulov_Java_OSA_exam" options="--add-modules java.base" />
     </option>
   </component>
 </project>
